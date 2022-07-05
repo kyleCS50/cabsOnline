@@ -1,0 +1,39 @@
+<!-- 
+Student name: Kyle Francis
+Student ID: 19077956
+File Description: This is the admin page for the website. 
+It allows the admins to view bookings in the system, and assign any unassigned bookings to a driver. There are no functions in this file
+-->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+  <script src="./admin.js"></script>
+  <link rel="stylesheet" href="styles.css" />
+  <title>CabsOnline Admin</title>
+  <link rel="icon" href="./images/icon.png" />
+</head>
+
+<body>
+  <div id="title">
+    <img src="./images/taxi.gif" />
+    <div id="blackBox">
+      <h1>CabsOnline Admin</h1>
+      <a href="booking.html">Booking Page</a>
+    </div>
+  </div>
+  <form>
+    <div id="field">
+      <label>Search for Booking:</label>
+      <input type="text" name="bsearch" id="bsearch" placeholder="BRN00001" /><br />
+    </div>
+    <input id="button" type="button" name="sbutton" value="Submit" onClick="searchData('results', bsearch.value)" />
+  </form>
+  <div class="content">
+    <p id="confirmation"></p>
+    <p id="results"></p>
+  </div>
+</body>
+
+</html>

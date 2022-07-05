@@ -1,0 +1,34 @@
+Files in the System:
+- booking.html
+- booking.js
+- booking.php
+- admin.html
+- admin.js
+- admin.php
+- updateStatus.php
+- styles.css
+- ./images
+    - checks.png
+    - icon.png
+    - taxi.gif
+
+Instructions:
+- Create booking
+    - Open up booking.html in a browser
+    - Enter relevant details in correct fields (name, number, address info, destination info, date and time)
+    - Click submit
+    - The booking should be created and the page should reload with the booking reference number, pick-up date and time
+- Checking bookings on admin page
+    - Open up admin.html in a browser
+    - Enter booking reference number to find specific booking or leave blank to see all bookings with a pick-up time within 2 hours from the current time
+    - Click submit
+    - Relevant bookings will display in a table with the following columns:
+        - Booking reference number
+        - Customer name
+        - Phone number
+        - Pick-up suburb
+        - Destination suburb
+        - Pick-up date and time
+        - Status
+    - Admin can assign a driver to a booking by clicking the assign button
+    - A booking will not display if it is assigned to a driver when doing a blank search

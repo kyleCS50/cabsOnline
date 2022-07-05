@@ -1,0 +1,94 @@
+<!--
+  Student Name: Kyle Francis
+  Student ID: 19077956
+  File Description: This is the bookings page for the website. It allows users to create a new booking. There are no functions in this file.
+-->
+<!DOCTYPE html>
+<html>
+
+<head>
+  <script src="./booking.js"></script>
+  <link rel="stylesheet" href="styles.css" />
+  <title>CabsOnline Booking</title>
+  <link rel="icon" href="./images/icon.png" />
+</head>
+
+<body onload="getCurrentDateTime()">
+  <div id="title">
+    <img src="./images/taxi.gif" />
+    <div id="blackBox">
+      <h1>CabsOnline Booking</h1>
+      <a href="admin.html">Admin Page</a>
+    </div>
+  </div>
+  <div id="targetDiv">
+    <p name="reference" id="reference"></p>
+  </div>
+  <form id="form">
+    <div id="field">
+      <label>Name:</label>
+      <input type="text" name="cname" id="cname" placeholder="John Smith" />
+      <div id="required">*</div>
+    </div>
+    <br />
+    <div id="field">
+      <label>Phone Number:</label>
+      <input type="text" name="phone" id="phone" placeholder="0211728291" />
+      <div id="required">*</div>
+    </div>
+    <br />
+    <div id="field">
+      <label>Unit Number:</label>
+      <input type="text" name="unumber" id="unumber" placeholder="3A" />
+      <div id="required"></div>
+    </div>
+    <br />
+    <div id="field">
+      <label>Street Number:</label>
+      <input type="text" name="snumber" id="snumber" placeholder="15" />
+      <div id="required">*</div>
+    </div>
+    <br />
+    <div id="field">
+      <label>Street Name:</label>
+      <input type="text" name="stname" id="stname" placeholder="Bass Road" required />
+      <div id="required">*</div>
+    </div>
+    <br />
+    <div id="field">
+      <label>Suburb:</label>
+      <input type="text" name="sbname" id="sbname" placeholder="Albany" />
+      <div id="required"></div>
+    </div>
+    <br />
+    <div id="field">
+      <label>Destination Suburb:</label>
+      <input type="text" name="dsbname" id="dsbname" placeholder="Lucas Heights" />
+      <div id="required"></div>
+    </div>
+    <br />
+    <div id="field">
+      <label>Pick-Up Date:</label>
+      <input type="date" name="date" id="date" />
+      <div id="required">*</div>
+    </div>
+    <br />
+    <div id="field">
+      <label>Pick-Up Time:</label>
+      <input type="time" name="time" id="time" />
+      <div id="required">*</div>
+    </div>
+    <br />
+    <input id="button" type="button" value="Submit" onClick="insertData('booking.php', 'reference', cname.value,
+        phone.value,
+        unumber.value,
+        snumber.value,
+        stname.value,
+        sbname.value,
+        dsbname.value,
+        date.value,
+        time.value)" />
+  </form>
+</body>
+
+</html>

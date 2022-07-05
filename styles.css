@@ -1,0 +1,127 @@
+/*
+Student Name: Kyle Francis
+Student ID: 19077956
+File Description: This file contains the styles for the website. There are no functions in this file.
+*/
+@import url("https://fonts.googleapis.com/css2?family=Prompt:ital,wght@0,300;1,700&display=swap");
+
+body {
+  background: linear-gradient(#ffcb28, #ee8b02);
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: "Prompt", sans-serif;
+  margin: 0px;
+}
+h1 {
+  font-style: italic;
+  color: #ffcb28;
+}
+a {
+  font-weight: bold;
+  color: #ffffff;
+  text-decoration: none;
+}
+a:hover {
+  color: #ffcb28;
+}
+#blackBox {
+  margin-bottom: 15px;
+  background-color: black;
+  border-radius: 10px;
+  border-style: solid;
+  border-color: #ffffff;
+  padding: 8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-weight: 700;
+  margin-top: 10px;
+  margin-left: 10px;
+}
+label {
+  width: 250px;
+  display: inline-block;
+}
+input {
+  height: 20px;
+  width: 125px;
+  padding: 5px;
+  border: 2px solid black;
+  border-radius: 10px;
+}
+#required {
+  width: 10px;
+  display: inline-block;
+  color: red;
+  font-size: 20px;
+}
+#targetDiv {
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#reference {
+  text-align: center;
+}
+img {
+  height: 95px;
+  margin-bottom: -15px;
+}
+
+#title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: url("./images/checks.png");
+  background-size: contain;
+}
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+table {
+  width: auto;
+  border: 2px solid black;
+  text-align: center;
+}
+th,
+td {
+  border: 2px solid black;
+  padding: 10px;
+  font-weight: bold;
+}
+button,
+#button {
+  padding: 5px;
+  height: 35px;
+  width: 55px;
+  background-color: #000000;
+  border: 2px solid #ffffff;
+  border-radius: 10px;
+  color: #ffcb28;
+  font-weight: bold;
+  box-shadow: 5px 5px 10px #000000;
+}
+#button {
+  margin-bottom: 10px;
+}
+button:disabled {
+  background-color: rgba(0, 0, 0, 0.5);
+  border: 2px solid rgba(255, 255, 255, 0.5);
+  border-radius: 10px;
+  color: rgba(255, 203, 40, 0.5);
+  font-weight: bold;
+  box-shadow: 0px 0px 0px;
+}
